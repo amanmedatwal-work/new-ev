@@ -64,11 +64,11 @@ body {
     display: flex;
     align-items: center;
     gap: 1rem;
-    width: 8em;
+    width: fit-content;
 }
 
 .logo-img {
-    height: 90px;
+    height: 60px;
     max-width: 100%;
     object-fit: contain;
     border-radius: 8px;
