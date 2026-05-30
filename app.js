@@ -1,5 +1,23 @@
 document.addEventListener('DOMContentLoaded', () => {
     
+    // --- 0. Mobile Menu Logic ---
+    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+    const navLinks = document.querySelector('.nav-links');
+    
+    if (mobileMenuBtn && navLinks) {
+        mobileMenuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active-menu');
+            const icon = mobileMenuBtn.querySelector('i');
+            if (navLinks.classList.contains('active-menu')) {
+                icon.classList.remove('bi-list');
+                icon.classList.add('bi-x-lg');
+            } else {
+                icon.classList.remove('bi-x-lg');
+                icon.classList.add('bi-list');
+            }
+        });
+    }
+
     // --- 1. Charging Simulator Logic (Only if on Services page) ---
     const gunBtns = document.querySelectorAll('.gun-btn');
     if (gunBtns.length > 0) {
