@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | JAKHARS POWER POINT</title>
+    <meta name="description" content="State-of-the-art 180kW Ultra-Fast EV Charging Stations.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo-container" style="cursor: pointer;" onclick="window.location.href='index.html'">
+            <svg class="logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="50" r="45" fill="none" stroke="var(--primary-green)" stroke-width="6"/>
+                <path d="M60 30 V60 C60 70, 40 70, 40 60" fill="none" stroke="var(--dark-charcoal)" stroke-width="10" stroke-linecap="round"/>
+                <g transform="translate(65, 10)">
+                    <rect x="0" y="5" width="20" height="15" fill="var(--primary-green)" rx="3"/>
+                    <rect x="4" y="0" width="4" height="5" fill="var(--primary-green)"/>
+                    <rect x="12" y="0" width="4" height="5" fill="var(--primary-green)"/>
+                    <path d="M10 20 V30 C10 35, -20 35, -20 30" fill="none" stroke="var(--primary-green)" stroke-width="4"/>
+                </g>
+            </svg>
+            <div class="brand-text">
+                <h1>JAKHARS</h1>
+                <span class="tagline">POWER POINT</span>
+            </div>
+        </div>
+        <nav class="nav-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="locations.html">Locations</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <a href="locations.html" class="cta-button">Find Station</a>
+    </header>
+
+    <main>
+        <section class="hero-banner fade-in" style="width: 100%; min-height: 85vh; background: url('img3.jpeg') center/cover no-repeat; position: relative; display: flex; align-items: center; justify-content: center; text-align: center;">
+            <div style="position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(18,18,18,0.8), rgba(18,18,18,0.4));"></div>
+            <div style="position: relative; z-index: 1; color: var(--white); padding: 0 2rem; max-width: 900px;">
+                <h2 style="font-size: 4.5rem; font-weight: 800; margin-bottom: 1.5rem; line-height: 1.1; text-shadow: 0 10px 30px rgba(0,0,0,0.5);">The Future of <span class="highlight">Ultra-Fast</span> EV Charging</h2>
+                <p style="font-size: 1.3rem; margin-bottom: 3rem; color: #eee; text-shadow: 0 5px 15px rgba(0,0,0,0.5);">Experience the sheer power of 180kW charging at Jakhars Power Point. Fully charge your EV in minutes, not hours.</p>
+                <div class="search-bar" style="max-width: 500px; margin: 0 auto; display: flex; background: rgba(255,255,255,0.15); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2); padding: 8px; border-radius: 50px; box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
+                    <input type="text" id="quick-search" placeholder="Enter your city..." style="background: transparent; color: white; flex: 1; border: none; outline: none; padding: 0 20px; font-size: 1.1rem;">
+                    <button class="search-btn" onclick="window.location.href='locations.html'" style="background: var(--primary-green); color: var(--dark-charcoal); font-size: 1.1rem; padding: 10px 30px;">Search</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section class="why-choose-us fade-in delay-100" style="padding: 5rem 5%; background: var(--light-bg);">
+        <h2 class="section-title">Why <span class="highlight">Choose Us</span></h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon" style="font-size: 2.5rem; margin-bottom: 1rem;"><i class="bi bi-lightning-charge-fill" style="color: var(--primary-green);"></i></div>
+                <h3>Lightning Fast</h3>
+                <p>180kW DC chargers ensure you spend less time waiting and more time driving.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon" style="font-size: 2.5rem; margin-bottom: 1rem;"><i class="bi bi-phone-fill" style="color: var(--primary-green);"></i></div>
+                <h3>Smart Tracking</h3>
+                <p>Monitor your charge, pay seamlessly, and locate stations with ease.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon" style="font-size: 2.5rem; margin-bottom: 1rem;"><i class="bi bi-tree-fill" style="color: var(--primary-green);"></i></div>
+                <h3>Green Energy</h3>
+                <p>Our stations are powered by renewable energy sources, minimizing your carbon footprint.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="how-it-works fade-in delay-200" style="padding: 5rem 5%; background-color: var(--white);">
+        <h2 class="section-title">How It <span class="highlight">Works</span></h2>
+        <div class="steps-container">
+            <div class="step-card">
+                <div class="step-number">1</div>
+                <h3>Locate</h3>
+                <p>Find the nearest Jakhars Power Point using our interactive map.</p>
+            </div>
+            <div class="step-card">
+                <div class="step-number">2</div>
+                <h3>Plug-in</h3>
+                <p>Connect the ultra-fast 180kW charging gun to your EV.</p>
+            </div>
+            <div class="step-card">
+                <div class="step-number">3</div>
+                <h3>Charge & Go</h3>
+                <p>Get up to 80% charge in 20 minutes and resume your journey.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats-section fade-in delay-100">
+        <div class="stat-item">
+            <h3>50+</h3>
+            <p>Active Stations</p>
+        </div>
+        <div class="stat-item">
+            <h3>180kW</h3>
+            <p>Ultra-Fast Charging</p>
+        </div>
+        <div class="stat-item">
+            <h3>10k+</h3>
+            <p>Happy EV Owners</p>
+        </div>
+    </section>
+
+    <section class="testimonials fade-in delay-200" style="padding: 5rem 5%; background: var(--light-bg);">
+        <h2 class="section-title">What Our Users <span class="highlight">Say</span></h2>
+        <div class="testimonials-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+            <div class="testimonial-card" style="padding: 2rem; background: var(--white); border-radius: 15px; border-left: 5px solid var(--primary-green); box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+                <p style="font-style: italic; color: var(--text-muted); margin-bottom: 1rem;">"The charging speed is unbelievable. I plugged in, got a coffee, and my EV was at 80%. Highly recommended!"</p>
+                <h4 style="color: var(--dark-charcoal);">— Rahul Sharma</h4>
+            </div>
+            <div class="testimonial-card" style="padding: 2rem; background: var(--white); border-radius: 15px; border-left: 5px solid var(--primary-green); box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+                <p style="font-style: italic; color: var(--text-muted); margin-bottom: 1rem;">"Finally a reliable charging network on the highway. Clean stations, fast charging, and no waiting time."</p>
+                <h4 style="color: var(--dark-charcoal);">— Priya Patel</h4>
+            </div>
+            <div class="testimonial-card" style="padding: 2rem; background: var(--white); border-radius: 15px; border-left: 5px solid var(--primary-green); box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+                <p style="font-style: italic; color: var(--text-muted); margin-bottom: 1rem;">"The 180kW chargers are a game changer. Customer support is also very responsive and helpful."</p>
+                <h4 style="color: var(--dark-charcoal);">— Amit Singh</h4>
+            </div>
+        </div>
+    </section>
+
+    <section class="partner-promo fade-in delay-100" style="padding: 5rem 5%; background: var(--primary-green); color: var(--dark-charcoal); text-align: center;">
+        <h2 class="section-title" style="color: var(--dark-charcoal); margin-bottom: 1rem;">Become a <span style="color: var(--white);">Charging Partner</span></h2>
+        <p style="font-size: 1.2rem; max-width: 700px; margin: 0 auto 3rem auto; font-weight: 500;">Own a commercial space, highway restaurant, or mall? Turn your parking spots into a revenue-generating asset with Jakhars Power Point.</p>
+        <div style="display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap;">
+            <div style="background: var(--white); padding: 2rem; border-radius: 15px; width: 250px; box-shadow: 0 10px 20px rgba(0,0,0,0.1);">
+                <div style="font-size: 2.5rem; margin-bottom: 1rem;"><i class="bi bi-graph-up-arrow" style="color: var(--primary-green);"></i></div>
+                <h3 style="margin-bottom: 0.5rem;">Passive Income</h3>
+                <p style="font-size: 0.9rem; color: var(--text-muted);">Earn a share of the charging revenue with zero daily effort.</p>
+            </div>
+            <div style="background: var(--white); padding: 2rem; border-radius: 15px; width: 250px; box-shadow: 0 10px 20px rgba(0,0,0,0.1);">
+                <div style="font-size: 2.5rem; margin-bottom: 1rem;"><i class="bi bi-people-fill" style="color: var(--primary-green);"></i></div>
+                <h3 style="margin-bottom: 0.5rem;">More Footfall</h3>
+                <p style="font-size: 0.9rem; color: var(--text-muted);">Attract premium EV owners to your primary business.</p>
+            </div>
+            <div style="background: var(--white); padding: 2rem; border-radius: 15px; width: 250px; box-shadow: 0 10px 20px rgba(0,0,0,0.1);">
+                <div style="font-size: 2.5rem; margin-bottom: 1rem;"><i class="bi bi-tools" style="color: var(--primary-green);"></i></div>
+                <h3 style="margin-bottom: 0.5rem;">Full Support</h3>
+                <p style="font-size: 0.9rem; color: var(--text-muted);">We handle installation, maintenance, and 24/7 support.</p>
+            </div>
+        </div>
+        <div style="margin-top: 3rem;">
+            <a href="contact.html" class="cta-button" style="background: var(--dark-charcoal); color: var(--white); font-size: 1.1rem; padding: 1rem 3rem;">Apply Now</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content fade-in">
+            <div class="footer-brand">
+                <h3>JAKHARS <span class="highlight">POWER POINT</span></h3>
+                <p>Powering the future of mobility with reliable, ultra-fast charging infrastructure.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="locations.html">Locations</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p>Email: info@jakharspower.com</p>
+                <p>Phone: +91 98765 43210</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Jakhars Power Point. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>

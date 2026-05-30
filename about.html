@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | JAKHARS POWER POINT</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo-container" style="cursor: pointer;" onclick="window.location.href='index.html'">
+            <svg class="logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="50" r="45" fill="none" stroke="var(--primary-green)" stroke-width="6"/>
+                <path d="M60 30 V60 C60 70, 40 70, 40 60" fill="none" stroke="var(--dark-charcoal)" stroke-width="10" stroke-linecap="round"/>
+                <g transform="translate(65, 10)">
+                    <rect x="0" y="5" width="20" height="15" fill="var(--primary-green)" rx="3"/>
+                    <rect x="4" y="0" width="4" height="5" fill="var(--primary-green)"/>
+                    <rect x="12" y="0" width="4" height="5" fill="var(--primary-green)"/>
+                    <path d="M10 20 V30 C10 35, -20 35, -20 30" fill="none" stroke="var(--primary-green)" stroke-width="4"/>
+                </g>
+            </svg>
+            <div class="brand-text">
+                <h1>JAKHARS</h1>
+                <span class="tagline">POWER POINT</span>
+            </div>
+        </div>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html" class="active">About</a>
+            <a href="services.html">Services</a>
+            <a href="locations.html">Locations</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <a href="locations.html" class="cta-button">Find Station</a>
+    </header>
+
+    <section class="page-hero fade-in" style="width: 100%; height: 40vh; min-height: 300px; background: url('img5.jpg') center/cover no-repeat; position: relative; display: flex; align-items: center; justify-content: center; text-align: center; margin-top: 0;">
+        <div style="position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(18,18,18,0.7), rgba(18,18,18,0.9));"></div>
+        <div style="position: relative; z-index: 1; color: var(--white); padding: 0 2rem;">
+            <h1 style="font-size: 3.5rem; font-weight: 800; margin-bottom: 0.5rem; text-shadow: 0 5px 15px rgba(0,0,0,0.5);">About <span class="highlight">Us</span></h1>
+            <p style="font-size: 1.2rem; color: #ccc;">Powering the sustainable future of mobility.</p>
+        </div>
+    </section>
+
+    <main class="page-container" style="padding-top: 4rem;">
+        <h2 class="section-title fade-in">Our <span class="highlight">Mission</span></h2>
+        <p class="subtitle fade-in delay-100" style="max-width: 800px; margin: -2rem auto 3rem auto; text-align: center;">At Jakhars Power Point, we are building a seamless, high-speed, and ultra-reliable EV charging network that ensures you spend more time on the road and less time waiting.</p>
+
+        <section class="story-section fade-in delay-100" style="padding: 2rem 5% 5rem 5%; display: flex; align-items: center; gap: 4rem; flex-wrap: wrap;">
+            <div style="flex: 1; min-width: 300px;">
+                <h2 class="section-title" style="text-align: left;">Our <span class="highlight">Story</span></h2>
+                <p style="color: var(--text-muted); line-height: 1.8; font-size: 1.1rem; margin-bottom: 1.5rem;">
+                    Founded with a passion for sustainable energy, Jakhars Power Point started with a simple vision: to eliminate range anxiety for EV owners in India.
+                </p>
+                <p style="color: var(--text-muted); line-height: 1.8; font-size: 1.1rem;">
+                    We realized that the transition to electric mobility required robust, fast, and reliable infrastructure. Since our inception, we have rapidly expanded our network, deploying cutting-edge 180kW DC fast chargers across key highways and urban centers to ensure you never run out of juice.
+                </p>
+            </div>
+            <div style="flex: 1; min-width: 300px;">
+                <img src="img4.jpg" alt="Our Story" style="width: 100%; border-radius: 20px; box-shadow: 0 15px 30px rgba(0,0,0,0.1);">
+            </div>
+        </section>
+
+        <section class="values-section fade-in delay-200" style="padding: 5rem 5%; background: var(--light-bg); border-radius: 20px; margin-bottom: 5rem;">
+            <h2 class="section-title">Our Core <span class="highlight">Values</span></h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+                <div style="text-align: center; padding: 2rem; background: var(--white); border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;"><i class="bi bi-bullseye" style="color: var(--primary-green);"></i></div>
+                    <h3 style="color: var(--dark-charcoal); margin-bottom: 1rem;">Innovation</h3>
+                    <p style="color: var(--text-muted);">Constantly pushing the boundaries of charging technology to deliver the fastest speeds.</p>
+                </div>
+                <div style="text-align: center; padding: 2rem; background: var(--white); border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;"><i class="bi bi-shield-check" style="color: var(--primary-green);"></i></div>
+                    <h3 style="color: var(--dark-charcoal); margin-bottom: 1rem;">Reliability</h3>
+                    <p style="color: var(--text-muted);">Ensuring 99.9% uptime so you are never left stranded without a charge.</p>
+                </div>
+                <div style="text-align: center; padding: 2rem; background: var(--white); border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;"><i class="bi bi-globe-americas" style="color: var(--primary-green);"></i></div>
+                    <h3 style="color: var(--dark-charcoal); margin-bottom: 1rem;">Sustainability</h3>
+                    <p style="color: var(--text-muted);">Committed to a greener planet by promoting zero-emission transportation.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="timeline-section fade-in delay-200" style="padding: 0 5% 5rem 5%;">
+            <h2 class="section-title">Our <span class="highlight">Journey</span></h2>
+            <div style="max-width: 800px; margin: 0 auto; position: relative;">
+                <div style="position: absolute; left: 50%; transform: translateX(-50%); width: 4px; height: 100%; background: var(--primary-green); opacity: 0.3; border-radius: 4px;"></div>
+                
+                <div style="display: flex; justify-content: flex-start; margin-bottom: 3rem; position: relative; width: 50%;">
+                    <div style="background: var(--white); padding: 1.5rem; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); text-align: right; margin-right: 2rem; width: 100%; border-right: 5px solid var(--primary-green);">
+                        <h3 style="color: var(--primary-green); margin-bottom: 0.5rem;">2021</h3>
+                        <h4 style="color: var(--dark-charcoal); margin-bottom: 0.5rem;">The Inception</h4>
+                        <p style="color: var(--text-muted); font-size: 0.9rem;">Founded with a vision to revolutionize the Indian EV landscape.</p>
+                    </div>
+                </div>
+
+                <div style="display: flex; justify-content: flex-end; margin-bottom: 3rem; position: relative; width: 50%; margin-left: 50%;">
+                    <div style="background: var(--white); padding: 1.5rem; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); text-align: left; margin-left: 2rem; width: 100%; border-left: 5px solid var(--primary-green);">
+                        <h3 style="color: var(--primary-green); margin-bottom: 0.5rem;">2023</h3>
+                        <h4 style="color: var(--dark-charcoal); margin-bottom: 0.5rem;">First 10 Stations</h4>
+                        <p style="color: var(--text-muted); font-size: 0.9rem;">Successfully deployed our first batch of 180kW fast chargers.</p>
+                    </div>
+                </div>
+
+                <div style="display: flex; justify-content: flex-start; position: relative; width: 50%;">
+                    <div style="background: var(--white); padding: 1.5rem; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); text-align: right; margin-right: 2rem; width: 100%; border-right: 5px solid var(--primary-green);">
+                        <h3 style="color: var(--primary-green); margin-bottom: 0.5rem;">2026</h3>
+                        <h4 style="color: var(--dark-charcoal); margin-bottom: 0.5rem;">Nationwide Network</h4>
+                        <p style="color: var(--text-muted); font-size: 0.9rem;">Expanding across all major highways, building a seamless ecosystem.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="calculator-section fade-in delay-200" style="padding-top: 0;">
+            <h2 class="section-title">Your <span class="highlight">Impact</span> Calculator</h2>
+            <div class="calculator-card">
+                <div class="slider-container">
+                    <label for="km-slider">Kilometers driven per month: <span id="km-val">1000</span> km</label>
+                    <input type="range" id="km-slider" min="100" max="5000" value="1000" step="100">
+                </div>
+                <div class="results">
+                    <div class="result-box">
+                        <h4>CO2 Saved</h4>
+                        <p><span id="co2-val">153</span> kg</p>
+                    </div>
+                    <div class="result-box">
+                        <h4>Money Saved</h4>
+                        <p>₹<span id="money-val">5100</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content fade-in delay-300">
+            <div class="footer-brand">
+                <h3>JAKHARS <span class="highlight">POWER POINT</span></h3>
+                <p>Powering the future of mobility with reliable, ultra-fast charging infrastructure.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="locations.html">Locations</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p>Email: info@jakharspower.com</p>
+                <p>Phone: +91 98765 43210</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Jakhars Power Point. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locations | JAKHARS POWER POINT</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo-container" style="cursor: pointer;" onclick="window.location.href='index.html'">
+            <svg class="logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="50" r="45" fill="none" stroke="var(--primary-green)" stroke-width="6"/>
+                <path d="M60 30 V60 C60 70, 40 70, 40 60" fill="none" stroke="var(--dark-charcoal)" stroke-width="10" stroke-linecap="round"/>
+                <g transform="translate(65, 10)">
+                    <rect x="0" y="5" width="20" height="15" fill="var(--primary-green)" rx="3"/>
+                    <rect x="4" y="0" width="4" height="5" fill="var(--primary-green)"/>
+                    <rect x="12" y="0" width="4" height="5" fill="var(--primary-green)"/>
+                    <path d="M10 20 V30 C10 35, -20 35, -20 30" fill="none" stroke="var(--primary-green)" stroke-width="4"/>
+                </g>
+            </svg>
+            <div class="brand-text">
+                <h1>JAKHARS</h1>
+                <span class="tagline">POWER POINT</span>
+            </div>
+        </div>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="locations.html" class="active">Locations</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <a href="locations.html" class="cta-button">Find Station</a>
+    </header>
+
+    <section class="page-hero fade-in" style="width: 100%; height: 40vh; min-height: 300px; background: url('img8.jpg') center/cover no-repeat; position: relative; display: flex; align-items: center; justify-content: center; text-align: center; margin-top: 0;">
+        <div style="position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(18,18,18,0.7), rgba(18,18,18,0.9));"></div>
+        <div style="position: relative; z-index: 1; color: var(--white); padding: 0 2rem;">
+            <h1 style="font-size: 3.5rem; font-weight: 800; margin-bottom: 0.5rem; text-shadow: 0 5px 15px rgba(0,0,0,0.5);">Our <span class="highlight">Network</span></h1>
+            <p style="font-size: 1.2rem; color: #ccc;">Find an ultra-fast charger near you.</p>
+        </div>
+    </section>
+
+    <main class="page-container" style="padding-top: 4rem; background-color: var(--light-bg); margin:0;">
+        <h2 class="section-title fade-in">Find a <span class="highlight">Station</span></h2>
+        
+        <div class="locator-container fade-in delay-100" style="margin: 0 5%; padding-bottom: 5rem;">
+            <div class="locator-sidebar">
+                <div class="filter-group">
+                    <input type="text" id="station-search" placeholder="Search locations...">
+                </div>
+                <div class="station-list" id="station-list">
+                    <!-- Filled by JS -->
+                </div>
+            </div>
+            <div class="locator-map-placeholder" style="flex: 2; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112061.09262725227!2d77.1587376!3d28.6289016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd0683919c3b%3A0xf5fc331b74c2b9e2!2sNew%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" width="100%" height="100%" style="border:0; display:block;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        
+        <section class="suggest-location fade-in delay-200" style="padding: 4rem 5%; background: var(--white); border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); margin: 0 5% 4rem 5%; display: flex; align-items: center; gap: 4rem; flex-wrap: wrap;">
+            <div style="flex: 1; min-width: 300px;">
+                <h2 class="section-title" style="text-align: left; margin-bottom: 1rem;">Want a Station <span class="highlight">Near You?</span></h2>
+                <p style="color: var(--text-muted); margin-bottom: 2rem; font-size: 1.1rem;">We are constantly expanding our network. Let us know where we should build our next ultra-fast charging hub.</p>
+                <a href="contact.html" class="cta-button">Suggest a Location</a>
+            </div>
+            <div style="flex: 1; min-width: 300px;">
+                <img src="img9.webp" alt="Suggest Location" style="width: 100%; border-radius: 20px; box-shadow: 0 10px 20px rgba(0,0,0,0.1);">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content fade-in delay-200">
+            <div class="footer-brand">
+                <h3>JAKHARS <span class="highlight">POWER POINT</span></h3>
+                <p>Powering the future of mobility with reliable, ultra-fast charging infrastructure.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="locations.html">Locations</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p>Email: info@jakharspower.com</p>
+                <p>Phone: +91 98765 43210</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Jakhars Power Point. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
