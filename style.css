@@ -62,9 +62,12 @@ body {
     gap: 1rem;
 }
 
-.logo-svg {
-    width: 50px;
+.logo-img {
     height: 50px;
+    width: auto;
+    max-width: 150px;
+    object-fit: contain;
+    border-radius: 8px; /* Optional touch for the image */
 }
 
 .brand-text h1 {
