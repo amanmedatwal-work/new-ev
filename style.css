@@ -63,11 +63,11 @@ body {
 }
 
 .logo-img {
-    height: 50px;
+    height: 90px;
     width: auto;
-    max-width: 150px;
+    max-width: 250px;
     object-fit: contain;
-    border-radius: 8px; /* Optional touch for the image */
+    border-radius: 8px;
 }
 
 .brand-text h1 {
@@ -912,6 +912,10 @@ footer {
     /* Navbar */
     .mobile-menu-btn {
         display: block;
+    }
+
+    .logo-img {
+        height: 70px;
     }
 
     .nav-links {
